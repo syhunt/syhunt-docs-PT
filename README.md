@@ -70,10 +70,3 @@ Documentação do **Syhunt Hybrid** e de seus módulos: Syhunt Dynamic (DAST), S
 | Documento | Descrição |
 |---|---|
 | [Como Relatar Bugs e Obter Suporte](support/reporting-bugs.md) | Falsos positivos, logs de depuração e tickets de suporte. |
-
-## Sobre este repositório
-
-- Cada página indica a versão do produto à qual se aplica.
-- As imagens ficam na pasta [`images/`](images/).
-- Os nomes de botões, menus e telas aparecem como na interface em inglês do Syhunt.
-- Links para páginas fora desta documentação apontam para [syhunt.com](https://www.syhunt.com/).
