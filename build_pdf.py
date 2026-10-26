@@ -70,7 +70,7 @@ STRINGS = {
         "of": "de",
         "alerts": {"NOTE": "Observação", "TIP": "Dica", "IMPORTANT": "Importante",
                    "WARNING": "Atenção", "CAUTION": "Cuidado"},
-        "filename": "Syhunt-Hybrid-{version}-Documentacao-PT.pdf",
+        "filename": "Syhunt-Hybrid-{version}-Documentation-PT.pdf",
     },
 }
 
