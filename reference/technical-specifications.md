@@ -669,7 +669,7 @@ O Syhunt Hybrid roda em Windows, macOS (Apple Silicon) e Linux de 64 bits, e pod
 | **Memória** | 4 GB de RAM disponível (8 GB recomendados)¹ |
 | **Disco** | 2 GB de espaço livre em disco² |
 | **Conexão com a Internet** | Recomendada para varreduras de código e dinâmicas, e necessária para alguns recursos (consulte [Requisitos de conexão com a Internet](../installation/install-windows.md#sysreq_net)) |
-| **Sistema operacional** (64 bits) | Windows 11, ou Windows Server 2019/2022/2025 (x64 ou ARM64)<br>macOS Sequoia 15.4.1 ou posterior (Apple Silicon)<br>Linux: Kali 2024.3 ou posterior, Ubuntu Server/Desktop 18 ou posterior, Debian 9 ou posterior<br>Sistemas suportados não oficialmente³, como as distribuições Linux listadas abaixo |
+| **Sistema operacional** (64 bits) | Windows 11, ou Windows Server 2019/2022/2025 (x64 ou ARM64)<br>macOS Sequoia 15.4.1 ou posterior (Apple Silicon)<br>Linux: Ubuntu Server/Desktop 22.04 LTS ou posterior, Debian 12 ou posterior, Kali 2024.3 ou posterior<br>Sistemas suportados não oficialmente³, como as distribuições Linux listadas abaixo |
 | **Git** | Opcional, para varreduras de repositórios Git: Git no Linux/macOS, Git for Windows no Windows |
 | **Java** | Java ou Java Headless, no Linux e no macOS |
 | **Wine** | Wine64 Stable, quando ainda não houver binários nativos para seu sistema ou distribuição |
