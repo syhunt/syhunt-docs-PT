@@ -673,7 +673,6 @@ O Syhunt Hybrid roda em Windows, macOS (Apple Silicon) e Linux de 64 bits, e pod
 | **Git** | Opcional, para varreduras de repositórios Git: Git no Linux/macOS, Git for Windows no Windows |
 | **Java** | Java ou Java Headless, no Linux e no macOS |
 | **Wine** | Wine64 Stable, quando ainda não houver binários nativos para seu sistema ou distribuição |
-| **IA** | Opcional, para recursos com IA: uma chave de API da OpenAI ou da DeepSeek, ou um modelo de IA local |
 
 ¹ Não inclui a RAM adicional que pode ser necessária para varreduras simultâneas.<br>
 ² Não inclui o espaço para dados das sessões de varredura, que depende do site ou do código analisado e da frequência das varreduras.<br>
