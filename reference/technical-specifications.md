@@ -1,6 +1,6 @@
 # Especificações Técnicas
 
-> **Aplica-se a:** Syhunt Hybrid 7.2
+> **Aplica-se a:** Syhunt Hybrid 7.2.1
 
 **Conteúdo**
 
@@ -28,7 +28,6 @@ Este documento descreve as especificações técnicas do **Syhunt Hybrid**, uma 
 - As licenças incluem atualizações de versão e suporte técnico, além de documentação técnica em inglês.
 - As licenças permitem um número ilimitado de varreduras de um número ilimitado de ativos por ano, iniciadas a partir de um único dispositivo (ou mais, se forem adquiridas estações adicionais). Cada licença inclui dois usuários da interface web, um administrador e mais um usuário; é possível adquirir usuários adicionais.
 - Algumas licenças cobrem todas as linguagens de programação suportadas; outras cobrem pelo menos uma. É possível adquirir mais linguagens conforme a necessidade.
-- As licenças permitem a integração com IA por meio de um endpoint de API configurável. Atualmente, o Syhunt suporta OpenAI, DeepSeek e modelos locais. Os custos e o hardware necessários para executar um modelo local ou na nuvem não são cobertos pelas licenças do Syhunt.
 
 <a id="Architecture"></a>
 
@@ -180,8 +179,6 @@ Recursos:
 - Detecta **shadow AI**, incluindo o uso de endpoints de API da DeepSeek, da OpenAI, compatíveis com OpenAI e de outros sistemas de IA emergentes.
 - Analisa arquivos de configuração para avaliar ameaças e identificar contramedidas no nível de configuração do servidor, do ambiente ou da aplicação.
 - Reconhece filtragem e validação de entradas, para resultados precisos e livres de falsos positivos.
-- *Com IA:* adiciona aos relatórios exemplos de código corrigido, ao lado de cada trecho de código vulnerável.
-- *Com IA:* adiciona aos relatórios uma pontuação de confiança para cada resultado, a probabilidade estimada (em porcentagem) de que seja um verdadeiro positivo e não um falso positivo.
 
 ### Visualização da varredura em tempo real
 
@@ -668,10 +665,11 @@ O Syhunt Hybrid roda em Windows, macOS (Apple Silicon) e Linux de 64 bits, e pod
 
 | Requisito | Detalhes |
 |---|---|
+| **CPU:** | Mínimo de 4 processadores lógicos (vCPUs/threads), sendo recomendados 8 ou mais. É necessária uma arquitetura Intel/AMD x86-64 para execução nativa. A arquitetura ARM64 também é suportada no Windows 11 através da emulação x86/x64 do Microsoft Prism, mas atualmente não é suportada no Linux. |
 | **Memória** | 4 GB de RAM disponível (8 GB recomendados)¹ |
 | **Disco** | 2 GB de espaço livre em disco² |
 | **Conexão com a Internet** | Recomendada para varreduras de código e dinâmicas, e necessária para alguns recursos (consulte [Requisitos de conexão com a Internet](../installation/install-windows.md#sysreq_net)) |
-| **Sistema operacional** (64 bits) | Windows 10 ou 11, ou Windows Server 2016 a 2025 (x64 ou ARM64)<br>macOS Sequoia 15.4.1 ou posterior (Apple Silicon)<br>Linux: Kali 2024.3 ou posterior, Ubuntu Server/Desktop 18 ou posterior, Debian 9 ou posterior<br>Sistemas suportados não oficialmente³, como as distribuições Linux listadas abaixo |
+| **Sistema operacional** (64 bits) | Windows 11, ou Windows Server 2019/2022/2025 (x64 ou ARM64)<br>macOS Sequoia 15.4.1 ou posterior (Apple Silicon)<br>Linux: Kali 2024.3 ou posterior, Ubuntu Server/Desktop 18 ou posterior, Debian 9 ou posterior<br>Sistemas suportados não oficialmente³, como as distribuições Linux listadas abaixo |
 | **Git** | Opcional, para varreduras de repositórios Git: Git no Linux/macOS, Git for Windows no Windows |
 | **Java** | Java ou Java Headless, no Linux e no macOS |
 | **Wine** | Wine64 Stable, quando ainda não houver binários nativos para seu sistema ou distribuição |
@@ -702,7 +700,6 @@ Os passos de instalação de cada distribuição estão no [guia de instalação
 | Termo | Definição |
 |---|---|
 | **Ataques ativos** | Análise de segurança que realiza ataques como força bruta, injeção e negação de serviço. |
-| **Com IA (AI-powered)** | Um recurso, ou extensão de recurso, baseado em inteligência artificial. Disponível apenas quando há uma integração configurada com um sistema de IA suportado (OpenAI, DeepSeek ou um modelo local). |
 | **Ativo** | Uma URL, arquivo de código-fonte ou repositório que pode ser analisado. |
 | **Análise dinâmica aumentada** | A combinação de DAST e OAST. |
 | **DAST** | Dynamic Application Security Testing (teste dinâmico de segurança de aplicações): a ferramenta interage com uma aplicação web em execução para encontrar vulnerabilidades e fraquezas. Também chamado de teste caixa-preta. |
